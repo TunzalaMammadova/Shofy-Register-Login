@@ -1,0 +1,1414 @@
+﻿@namespace Shofy_Crud.ViewModels
+
+@model HomeVM
+
+<main>
+        <section id="slider-area">
+            <div class="slider-main">
+                <div class="slider-img">
+                    <img class="img1" src="~/images/slider-shape-1.png" alt="">
+                    <img class="img2" src="~/images/slider-shape-2.png" alt="">
+                    <img class="img3" src="~/images/slider-shape-3.png" alt="">
+                    <img class="img4" src="~/images/slider-shape-4.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="slider-1 ">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="slider-left">
+                                    <span>Starting at $274 </span>
+                                    <h3>The best tablet Collection 2023</h3>
+                                    <p>Exclusive offer<span class="offer">-35%</span>
+                                        off this week</p>
+                                    <button>
+                                        <a href="">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="slider-right">
+                                    <img src="~/images/slider-img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-2 d-none">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="slider-left">
+                                    <span>Starting at $999 </span>
+                                    <h3>The best note book collection 2023</h3>
+                                    <p>Exclusive offer<span class="offer">-10%</span>
+                                        off this week</p>
+                                    <button>
+                                        <a href="">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="slider-right">
+                                    <img src="~/images/slider-img-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-3 d-none ">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="slider-left">
+                                    <span>Starting at $999 </span>
+                                    <h3>The best note book collection 2023</h3>
+                                    <p>Exclusive offer<span class="offer">-10%</span>
+                                        off this week</p>
+                                    <button>
+                                        <a href="">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="slider-right">
+                                    <img src="~/images/slider-img-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-right">
+                    <button class="left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="right"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="point">
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </section>
+        <section id="product-cart">
+            <div class="container">
+                <div class="row">
+
+                    @foreach (var item in Model.Categories)
+                    {
+                        <div class="col">
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/@item.Image" alt="" />
+                                </div>
+                                <div class="cart-title">
+                                    <h3>@item.Name</h3>
+                                    <p>3 Product</p>
+                                </div>
+                            </div>
+                        </div>
+                     }
+                </div>
+            </div>
+        </section>
+        <section id="delivery-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="box">
+                            <img src="~/images/bus.svg" alt="">
+                            <div class="text">
+                                <h3>Free Delivery</h3>
+                                <p>Orders from all item</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box">
+                            <img src="~/images/dollar.svg" alt="">
+                            <div class="text">
+                                <h3>Return & Refund</h3>
+                                <p>Money back guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box">
+                            <img src="~/images/svgexport-18.svg" alt="">
+                            <div class="text">
+                                <h3>Member Discount</h3>
+                                <p>Onevery order over $140.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box">
+                            <img src="~/images/music.svg" alt="">
+                            <div class="text">
+                                <h3>Support 24/7</h3>
+                                <p>Contact us 24 hours a day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trending-products">
+            <div class="container">
+                <div class="title-category">
+                    <div class="col-5">
+                        <div class="title">
+                            <h3>Trending Products</h3>
+                            <img src="~/images/line-2.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="category">
+                            <ul>
+                                <li class="new">
+                                    New
+                                    <img class="line1" src="~/images/line-3.svg" alt="" />
+                                </li>
+                                <li class="featured">
+                                    Featured
+                                    <img class="line2 d-none" src="~/images/line-3.svg" alt="" />
+                                </li>
+                                <li class="top">
+                                    Top Sellers
+                                    <img class="line3 d-none" src="~/images/line-3.svg" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="products">
+                    <div class="new page-1">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/headphone-1 (1).png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphones Wireless.</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$120</span>
+                                            <span> $103.20 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/product-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Gaming Headphone</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$130</span>
+                                            <span> $123.50 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/headphone-8.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphone with Mic</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span></span>
+                                            <span> $110.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/5.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>Galaxy Android Tablet</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$320</span>
+                                            <span> $288.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/6.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>iPhone 14 Pro</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$1199</span>
+                                            <span> $1019.15 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/ipad-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>Apple iPad Air</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$999</span>
+                                            <span> $949.05 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/cpu-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">CPU Heat Pipes</a>
+                                        <h3>DeepCool Air Cooler</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$120</span>
+                                            <span> $103.20 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/cpu-5.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">CPU Heat Pipes</a>
+                                        <h3>Antec Air Cooler</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span></span>
+                                            <span> $80.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured page-2 d-none">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/headphone-8.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphones Wireless.</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$120</span>
+                                            <span> $103.20 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/6.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Gaming Headphone</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$130</span>
+                                            <span> $123.50 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/ipad-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button><i class="fa-regular fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphone with Mic</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span></span>
+                                            <span> $110.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/watch.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>Galaxy Android Tablet</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$320</span>
+                                            <span> $288.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-sellers page-3 d-none ">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/product-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphones Wireless.</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$120</span>
+                                            <span> $103.20 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/headphone-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Gaming Headphone</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$130</span>
+                                            <span> $123.50 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/headphone-8.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Headphones</a>
+                                        <h3>Headphone with Mic</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span></span>
+                                            <span> $110.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/5.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>Galaxy Android Tablet</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$320</span>
+                                            <span> $288.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/6.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>iPhone 14 Pro</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$1199</span>
+                                            <span> $1019.15 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/ipad-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">Mobile Tablets</a>
+                                        <h3>Apple iPad Air</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$999</span>
+                                            <span> $949.05 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/cpu-1.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">CPU Heat Pipes</a>
+                                        <h3>DeepCool Air Cooler</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>$120</span>
+                                            <span> $103.20 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="cart">
+                                    <div class="cart-img">
+                                        <img src="~/images/cpu-5.png" alt="" />
+                                        <div class="hover-but">
+                                            <button>
+                                                <img src="~/images/exp12.svg" alt="">
+                                            </button>
+                                            <button><i class="fa-regular fa-eye"></i></button>
+                                            <button>
+                                                <img src="~/images/svgexport-5.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="">CPU Heat Pipes</a>
+                                        <h3>Antec Air Cooler</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <span>(7 Review)</span>
+                                        </div>
+                                        <div class="price">
+                                            <span></span>
+                                            <span> $80.00 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="left-banner">
+                                    <div class="left-banner-img">
+                                        <img src="~/images/product-banner-1.jpg" alt="" />
+                                    </div>
+                                    <div class="banner-text">
+                                        <span>Sale 20% off all store</span>
+                                        <h3>
+                                            Smartphone <br />
+                                            BLU G91 Pro 2022
+                                        </h3>
+                                        <a href="">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="right-banner">
+                                    <div class="right-banner-img">
+                                        <img src="~/images/product-banner-2.jpg" alt="" />
+                                    </div>
+                                    <div class="banner-text">
+                                        <h3>
+                                            HyperX Cloud II <br />
+                                            Wireless
+                                        </h3>
+                                        <p>Sale 35% off</p>
+                                        <a href="">
+                                            Shop Now
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gadgest-electronics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="left-banner">
+                            <div class="up-banner">
+                                <div class="left-text">
+                                    <h3>
+                                        Electronics <br />
+                                        Gadgets
+                                    </h3>
+                                    <ul>
+                                        <li>Micrscope</li>
+                                        <li>Remote Control</li>
+                                        <li>Monitor</li>
+                                        <li>Thermometer</li>
+                                        <li>Backpack</li>
+                                        <li>Headphones</li>
+                                    </ul>
+                                    <a href="">
+                                        More Products<i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="right-img">
+                                    <img src="~/images/gadget-girl.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="down-banner">
+                                <div class="down-banner-img">
+                                    <img src="~/images/gadget-banner-1.jpg" alt="" />
+                                </div>
+                                <div class="down-banner-text">
+                                    <span>Only $99.00</span>
+                                    <h3>
+                                        Selected novelty <br />
+                                        Products
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="electron-product">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/headphone-1.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-text">
+                                            <a href="">Headphones</a>
+                                            <h3>Headphones Wireless.</h3>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <span>(7 Review)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>$120</span>
+                                                <span> $103.20 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/product-1.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-text">
+                                            <a href="">Headphones</a>
+                                            <h3>Gaming Headphone</h3>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <span>(7 Review)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>$130</span>
+                                                <span> $123.50 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/headphone-8.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="cart-text">
+                                                <a href="">Headphones</a>
+                                                <h3>Headphone with Mic</h3>
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                                    <span>(7 Review)</span>
+                                                </div>
+                                                <div class="price">
+                                                    <span></span>
+                                                    <span> $110.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/5.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-text">
+                                            <a href="">Mobile Tablets</a>
+                                            <h3>Galaxy Android Tablet</h3>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <span>(7 Review)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>$320</span>
+                                                <span> $288.00 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/6.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-text">
+                                            <a href="">Mobile Tablets</a>
+                                            <h3>iPhone 14 Pro</h3>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <span>(7 Review)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>$1199</span>
+                                                <span> $1019.15 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="cart">
+                                        <div class="cart-img">
+                                            <img src="~/images/ipad-1.png" alt="" />
+                                            <div class="hover-but">
+                                                <button>
+                                                    <img src="~/images/exp12.svg" alt="">
+                                                </button>
+                                                <button><i class="fa-regular fa-eye"></i></button>
+                                                <button>
+                                                    <img src="~/images/svgexport-5.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-text">
+                                            <a href="">Mobile Tablets</a>
+                                            <h3>Apple iPad Air</h3>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke"></i>
+                                                <span>(7 Review)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>$999</span>
+                                                <span> $949.05 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="sale-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="discount-products">
+                            <div class="up-title">
+                                <h3>Discount Products</h3>
+                                <img src="~/images/svgexport-26.svg" alt="" />
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/headphone-1.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Headphones Wireless.</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$120</span>
+                                        <span> $103.20 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/product-1.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Gaming Headphone</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(2 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$130</span>
+                                        <span> $123.50 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/5.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Mobile Tablets</a>
+                                    <h3>Galaxy Android Tablet</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$320</span>
+                                        <span> $288.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="featured-products">
+                            <div class="up-title">
+                                <h3>Featured Products</h3>
+                                <img src="~/images/svgexport-26.svg" alt="" />
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/headphone-8.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Headphone with Mic</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span></span>
+                                        <span> $110.00 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/6.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Mobile Tablets</a>
+                                    <h3>iPhone 14 Pro</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$1199</span>
+                                        <span> $1019.15 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/ipad-1.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href=""> Mobile Tablets</a>
+                                    <h3>Apple iPad Air</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$999</span>
+                                        <span> $949.05 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="selling-products">
+                            <div class="up-title">
+                                <h3>Selling Products</h3>
+                                <img src="~/images/svgexport-26.svg" alt="" />
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/product-1.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Headphones Wireless.</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$130</span>
+                                        <span> $123.50 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/headphone-1.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Headphone with Mic</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span></span>
+                                        <span> $103.20 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-img">
+                                    <img src="~/images/headphone-8.png" alt="" />
+                                </div>
+                                <div class="cart-text">
+                                    <a href="">Headphones</a>
+                                    <h3>Headphones Wireless.</h3>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span>(3 Review)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>$120</span>
+                                        <span> $103.20 </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="insta-subscribe">
+            <div class="insta-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="insta-cart">
+                                <div class="cart-img">
+                                    <img src="~/images/instagram-1.jpg" alt="" />
+                                </div>
+                                <div class="cart-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="insta-cart">
+                                <div class="cart-img">
+                                    <img src="~/images/instagram-2.jpg" alt="" />
+                                </div>
+                                <div class="cart-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="insta-cart">
+                                <div class="cart-img">
+                                    <img src="~/images/instagram-3.jpg" alt="" />
+                                </div>
+                                <div class="cart-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="insta-cart">
+                                <div class="cart-img">
+                                    <img src="~/images/instagram-4.jpg" alt="" />
+                                </div>
+                                <div class="cart-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="insta-cart">
+                                <div class="cart-img">
+                                    <img src="~/images/instagram-5.jpg" alt="" />
+                                </div>
+                                <div class="cart-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <div class="subs-img">
+                    <img src=" ~/img/home/subscribe-shape-1.png" alt="" />
+                    <img src=" ~/img/home/subscribe-shape-2.png" alt="" />
+                    <img src=" ~/img/home/subscribe-shape-3.png" alt="" />
+                    <img src=" ~/img/home/subscribe-shape-4.png" alt="" />
+                    <div class="sub-plane">
+                        <img src=" ~/img/home/plane.png" alt="" />
+                    </div>
+                </div>
+                <div class="sub-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="left-text">
+                                    <span>Sale 20% off all store</span>
+                                    <h3>Subscribe our Newsletter</h3>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="search">
+                                    <input type="email" placeholder="Enter Your Email" name="" id="" />
+                                    <button>Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+

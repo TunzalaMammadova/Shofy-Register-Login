@@ -1,0 +1,41 @@
+﻿@using Shofy_Crud.ViewModels.Accounts
+
+@model RegisterVM
+
+<div class="container mt-5">
+    <div class="register mb-5" style="width:50%; margin: 0 auto;">
+        <div class="row">
+            <h1>Sign up</h1>
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <form method="post" asp-action="Signup">
+                <div class="form-row">
+                    <label for="inputAddress">Username</label>
+                    <input asp-for="Username" autocomplete="off" class="form-control" id="inputAddress">
+                    <span class="text-danger" asp-validation-for="Username"></span>
+                </div>
+                <div class="form-row">
+                    <label for="inputAddress">Full name</label>
+                    <input asp-for="FullName" autocomplete="off" class="form-control" id="inputAddress">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Email</label>
+                    <input type="text" asp-for="Email" autocomplete="off" class="form-control" id="inputAddress">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Password</label>
+                    <input asp-for="Password" class="form-control" id="inputAddress2">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Confrim Password</label>
+                    <input asp-for="ConfirmPassword" class="form-control" id="inputAddress2">
+                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 text-center">Sign up</button>
+            </form>
+            <a asp-action="SignIn">Go to sing in</a>
+        </div>
+    </div>
+</div>

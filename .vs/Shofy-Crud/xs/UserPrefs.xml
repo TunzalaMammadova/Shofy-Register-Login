@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4A0CD0A0-41D1-4C16-BBEB-D65F25793C9E}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Shofy-Crud PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shofy-Crud/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="Shofy-Crud/Controllers/AccountController.cs" Line="108" Column="10" />
+      <File FileName="Shofy-Crud/Views/Shared/_Layout.cshtml" Line="146" Column="21" />
+      <File FileName="Shofy-Crud/Views/Account/SignUp.cshtml" Line="11" Column="28" />
+      <File FileName="Shofy-Crud/Views/Account/SignIn.cshtml" Line="11" Column="39" />
+      <File FileName="Shofy-Crud/ViewModels/Accounts/LoginVM.cs" Line="13" Column="1" />
+      <File FileName="Shofy-Crud/ViewModels/Accounts/RegisterVM.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Shofy-Crud" expanded="True">
+            <Node name="Shofy-Crud" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
